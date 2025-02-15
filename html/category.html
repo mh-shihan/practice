@@ -135,18 +135,50 @@
         ],
       };
 
-      console.log(wordCategories);
+      /** const categoryName = [
+        "city",
+        "flower",
+        "fish",
+        "animal",
+        "food",
+        "country",
+        "color",
+        "car",
+        "bird",
+        "sport",
+      ];
+      */
+
+      //Desired Function
+      let categoryName;
+      function handleCategoryName(category) {
+        categoryName = category.innerText.toLowerCase();
+        //alert(category.innerText.toLowerCase());
+        const wordArray = Object.entries(wordCategories).find(
+          (wordCategory) => wordCategory[0] === categoryName
+        )[1];
+        console.log(wordArray);
+      }
+
+      const cName = Object.entries(wordCategories).forEach((category) => {
+        categoryName.push(category[0]);
+      });
+      // console.log(categoryName);
     </script>
   </head>
   <body class="w-full h-[100vh] min-h-screen flex justify-center item-center">
     <div class="dropdown">
-      <div tabindex="0" role="button" class="btn m-1">Click</div>
+      <div tabindex="0" role="button" class="btn m-1">Category</div>
       <ul
         tabindex="0"
         class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow"
       >
-        <li><a>Item 1</a></li>
-        <li><a>Item 2</a></li>
+        <li><a onclick="handleCategoryName(this)">City</a></li>
+        <li><a onclick="handleCategoryName(this)">Flower</a></li>
+        <li><a onclick="handleCategoryName(this)">Fish</a></li>
+        <li><a onclick="handleCategoryName(this)">Bird</a></li>
+        <li><a onclick="handleCategoryName(this)">Animal</a></li>
+        <li><a onclick="handleCategoryName(this)">Food</a></li>
       </ul>
     </div>
   </body>
