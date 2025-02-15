@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html data-theme="light" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Category</title>
+
+    <script>
+      const wordCategories = {
+        city: [
+          "New York",
+          "Tokyo",
+          "Paris",
+          "London",
+          "Berlin",
+          "Sydney",
+          "Dubai",
+          "Toronto",
+          "Rome",
+          "Istanbul",
+        ],
+        flower: [
+          "Rose",
+          "Tulip",
+          "Lily",
+          "Daisy",
+          "Orchid",
+          "Sunflower",
+          "Jasmine",
+          "Daffodil",
+          "Lavender",
+          "Chrysanthemum",
+        ],
+        fish: [
+          "Salmon",
+          "Tuna",
+          "Goldfish",
+          "Shark",
+          "Trout",
+          "Catfish",
+          "Guppy",
+          "Betta",
+          "Pike",
+          "Carp",
+        ],
+        animal: [
+          "Lion",
+          "Tiger",
+          "Elephant",
+          "Giraffe",
+          "Zebra",
+          "Kangaroo",
+          "Panda",
+          "Wolf",
+          "Fox",
+          "Deer",
+        ],
+        food: [
+          "Pizza",
+          "Burger",
+          "Pasta",
+          "Sushi",
+          "Taco",
+          "Salad",
+          "Steak",
+          "Sandwich",
+          "Noodles",
+          "Dumplings",
+        ],
+        country: [
+          "USA",
+          "Canada",
+          "France",
+          "Germany",
+          "Japan",
+          "China",
+          "Brazil",
+          "India",
+          "Italy",
+          "Australia",
+        ],
+        color: [
+          "Red",
+          "Blue",
+          "Green",
+          "Yellow",
+          "Purple",
+          "Orange",
+          "Pink",
+          "Black",
+          "White",
+          "Brown",
+        ],
+        car: [
+          "Tesla",
+          "BMW",
+          "Mercedes",
+          "Audi",
+          "Ford",
+          "Ferrari",
+          "Lamborghini",
+          "Toyota",
+          "Honda",
+          "Chevrolet",
+        ],
+        bird: [
+          "Eagle",
+          "Parrot",
+          "Sparrow",
+          "Penguin",
+          "Owl",
+          "Peacock",
+          "Flamingo",
+          "Hawk",
+          "Hummingbird",
+          "Crow",
+        ],
+        sport: [
+          "Soccer",
+          "Basketball",
+          "Tennis",
+          "Baseball",
+          "Golf",
+          "Cricket",
+          "Hockey",
+          "Boxing",
+          "Swimming",
+          "Cycling",
+        ],
+      };
+
+      console.log(wordCategories);
+    </script>
+  </head>
+  <body class="w-full h-[100vh] min-h-screen flex justify-center item-center">
+    <div class="dropdown">
+      <div tabindex="0" role="button" class="btn m-1">Click</div>
+      <ul
+        tabindex="0"
+        class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow"
+      >
+        <li><a>Item 1</a></li>
+        <li><a>Item 2</a></li>
+      </ul>
+    </div>
+  </body>
+</html>
